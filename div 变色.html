@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #love {
+            width: 200px;
+            height: 200px;
+            background: #8a1111;
+
+        }
+    </style>
+    <script>
+        function haoll() {
+            var love = document.getElementById('love')
+            love.style.background = 'green'
+        }
+        function bolk() {
+            var love = document.getElementById('love')
+            love.style.background = 'yellow'
+        }
+        function ken() {
+            var love = document.getElementById('love')
+            love.style.background = 'black'
+        }
+
+        function lang1(kai) {
+            var love = document.getElementById('love')
+            love.style.background = kai
+        }
+        // 函数参数的
+    </script>
+</head>
+
+<body>
+    <input type="button" value="变绿" onclick="lang1('green')">
+    <input type="button" value="变黄" onclick="lang1('yellow')">
+    <input type="button" value="变黑" onclick="lang1('black')">
+    <div id="love">
+
+    </div>
+
+</body>
+
+</html>

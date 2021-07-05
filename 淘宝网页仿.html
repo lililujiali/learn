@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background: #f2f2f2;
+        }
+
+        .header {
+            display: flex;
+            background: #ef8c42;
+            padding: 7px;
+
+        }
+
+        .header-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .header-search {
+            background: #eb5c36;
+            border-radius: 4px;
+            color: #fff;
+            margin-left: 10px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .header-search-icon {
+            width: 15px;
+            margin-right: 5px;
+
+        }
+
+        .banner-img {
+            width: 100%;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+
+            padding-bottom: 10px;
+        }
+
+        .nav-item {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
+
+
+        }
+
+        .nav-item-img {
+            width: 61px;
+        }
+
+        .nav-item-text {
+            font-size: 10px;
+
+        }
+
+        .product-item {
+            width: 47%;
+            margin: 1.5%;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .product-img {
+            width: 100%;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1.5%;
+
+        }
+
+        .product-msg {
+            padding: 10px;
+        }
+
+        .product-msg-top {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .product-msg-price {
+            font-size: 16px;
+            color: #ff5500;
+        }
+        .product-msg-bottom{
+            display:flex;
+            flex-wrap: wrap;
+            align-items:center;
+            margin-top: 10px;
+           
+        }
+        .product-smg{
+            font-size:12px;
+            color: #999;
+            margin-left:15px;
+           
+        }
+        .app-btn{
+            color:#fff;
+            background: #eb5c36;
+            position: fixed;
+           bottom: 15px;
+           left: 100px;
+           right: 100px;
+           text-align:center;
+           padding: 5px;
+           border-radius:50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <img class="header-img"
+            src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F3.pic.pc6.com%2Fup%2F2016-6%2F20166301724525426425.png&refer=http%3A%2F%2F3.pic.pc6.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1620656614&t=78639abacb8c40946b37b8cf2763b1c6"
+            alt="">
+        <div class="header-search">
+            <img class="header-search-icon" src="./img/search.png" alt="">
+            <div>
+                搜索
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 横幅 -->
+    <div class="banner">
+        <img class="banner-img" src="https://img.alicdn.com/imgextra/i4/82/O1CN01AvQwUw1CTb9R8CfDe_!!82-0-luban.jpg"
+            alt="">
+    </div>
+
+
+
+    <!-- 导航 -->
+    <div class="nav">
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫新品
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫超市
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫超市
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫超市
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫超市
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫超市
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫超市
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫超市
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫超市
+
+            </div>
+        </div>
+        <div class="nav-item">
+            <img class="nav-item-img"
+                src="https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1" alt="">
+            <div class="nav-item-text">
+                天猫超市
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 商品列表 -->
+    <div class="product-list">
+        <div class="product-item">
+            <div class="product-img-wrap">
+                <img class="product-img"
+                    src="https://gw.alicdn.com/bao/uploaded/i1/405772024/O1CN01NE7rOQ1Qp2DiXt8Ra_!!0-item_pic.jpg_500x500q90.jpg_.webp"
+                    alt="">
+
+            </div>
+            <div class="product-msg">
+                <div class="product-msg-top">
+                    特价14.16.18cm德国工艺加厚厚底加大煮面奶锅不锈钢迷你辅食小锅
+
+                </div>
+                <div class="product-msg-bottom">
+                    <div class="product-msg-price">
+                        $39
+                    </div>
+                    <div class="product-smg">
+                        255人购买
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-img-wrap">
+                <img class="product-img"
+                    src="https://gw.alicdn.com/bao/uploaded/i1/405772024/O1CN01NE7rOQ1Qp2DiXt8Ra_!!0-item_pic.jpg_500x500q90.jpg_.webp"
+                    alt="">
+
+            </div>
+            <div class="product-msg">
+                <div class="product-msg-top">
+                    特价14.16.18cm德国工艺加厚厚底加大煮面奶锅不锈钢迷你辅食小锅
+
+                </div>
+                <div class="product-msg-bottom">
+                    <div class="product-msg-price">
+                        $39
+                    </div>
+                    <div class="product-smg">
+                        255人购买
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-img-wrap">
+                <img class="product-img"
+                    src="https://gw.alicdn.com/bao/uploaded/i1/405772024/O1CN01NE7rOQ1Qp2DiXt8Ra_!!0-item_pic.jpg_500x500q90.jpg_.webp"
+                    alt="">
+
+            </div>
+            <div class="product-msg">
+                <div class="product-msg-top">
+                    特价14.16.18cm德国工艺加厚厚底加大煮面奶锅不锈钢迷你辅食小锅
+
+                </div>
+                <div class="product-msg-bottom">
+                    <div class="product-msg-price">
+                        $39
+                    </div>
+                    <div class="product-smg">
+                        255人购买
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-img-wrap">
+                <img class="product-img"
+                    src="https://gw.alicdn.com/bao/uploaded/i1/405772024/O1CN01NE7rOQ1Qp2DiXt8Ra_!!0-item_pic.jpg_500x500q90.jpg_.webp"
+                    alt="">
+
+            </div>
+            <div class="product-msg">
+                <div class="product-msg-top">
+                    特价14.16.18cm德国工艺加厚厚底加大煮面奶锅不锈钢迷你辅食小锅
+
+                </div>
+                <div class="product-msg-bottom">
+                    <div class="product-msg-price">
+                        $39
+                    </div>
+                    <div class="product-smg">
+                        255人购买
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-img-wrap">
+                <img class="product-img"
+                    src="https://gw.alicdn.com/bao/uploaded/i1/405772024/O1CN01NE7rOQ1Qp2DiXt8Ra_!!0-item_pic.jpg_500x500q90.jpg_.webp"
+                    alt="">
+
+            </div>
+            <div class="product-msg">
+                <div class="product-msg-top">
+                    特价14.16.18cm德国工艺加厚厚底加大煮面奶锅不锈钢迷你辅食小锅
+
+                </div>
+                <div class="product-msg-bottom">
+                    <div class="product-msg-price">
+                        $39
+                    </div>
+                    <div class="product-smg">
+                        255人购买
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-btn">
+        打开手机淘宝
+    </div>
+
+
+</body>
+
+</html>

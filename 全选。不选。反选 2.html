@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            var style1=document.getElementById("ton1");
+            var style2=document.getElementById("ton2");
+            var style3=document.getElementById("ton3");
+            var yellow3=document.getElementById("div1");
+            var black3=yellow3.getElementsByTagName("input");
+            
+            style1.onclick=function(){
+                for (var i = 0;i<black3.length;i++){
+                    black3[i].checked=true
+                }
+                
+
+            }
+             
+            style2.onclick=function(){
+                for (var i = 0;i<black3.length;i++){
+                    black3[i].checked=false
+                }
+                
+
+            } 
+            style3.onclick=function(){
+                for (var i = 0;i<black3.length;i++){
+                   if (black3[i].checked==true){
+                    black3[i].checked=false
+                   }else{
+                    black3[i].checked=true
+                   }
+                   
+                }
+                
+
+            }
+
+
+
+
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <input id="ton1" type="button" value="全选">
+    <input id="ton2" type="button" value="不选">
+    <input id="ton3" type="button" value="反选">
+    <div id="div1">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+
+</body>
+</html>

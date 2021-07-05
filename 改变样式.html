@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background: rgb(14, 25, 173);
+        }
+
+
+    </style>
+    <script>
+        function towidth() {
+            var oDiv=document.getElementById('div1')
+            oDiv.style.width='400px'
+            
+        }
+        function toHeight() {
+            var oDiv=document.getElementById('div1')
+            oDiv.style.height='500px'
+            
+        }
+        function toGreen() {
+            var oDiv=document.getElementById('div1')
+            oDiv.style.background='green'
+            
+        }
+        function like(nono,loll) {
+            var kee=document.getElementById('div1')
+
+            kee.style[nono] = loll
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="div1">
+    </div>
+    <input type="button" value="变宽" onclick="like('width','400px')">
+    <input type="button" value="变高" onclick="like('height','500px')">
+    <input type="button" value="变绿" onclick="like('background','green')">
+    
+</body>
+</html>
